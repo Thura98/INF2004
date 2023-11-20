@@ -1,17 +1,17 @@
 # INF2004
 
 # Project's Title
-Name of the Project
+ByteBack : SD Card Recovery Tool
 
 # Project Description
-The first pico will read file data byte by byte from the different sectors of the SD Card and using the "magic number", which will then basically transfer and it will get the data from SD card then transfer byte by byte to the second pico.
-The second pico will then form the file byte by byte and store it.
+The project is a forensic recovery tool that utilizes Raspberry Pi Pico W and C language. The tool operates at a low-level, beyond the filesystem and analyzes the raw data within the SD Card. There are two phases to the tool: Data Carving (Recovery) and Data Storage.
 
+It performs a recovery operation on every single byte of data on the SD Card which is useful for recovering corrupted data. The recovered data is then transferred via the UART communication link from one Pico device to a second Pico device, which handles the File Storage in a similar fashion to the File Recovery where it reads the recovered data byte by byte and stored on the second Pico device.
 
 # How to Install and Run the Project
 Hardware Required:
 - Laptop/PC
-- 2 Raspberry Pico W
+- x2 Raspberry Pico W
 - x2 Maker Pi Pico
 - Male Jumper Cables
 - 2x 32GB SD Card
