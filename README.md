@@ -1,8 +1,11 @@
 # INF2004
 
-# Pico W File Craving?
+# Project's Title
+Name of the Project
 
 # Project Description
+What does the project does,
+Why you 
 
 # How to Install and Run the Project
 Hardware Required:
