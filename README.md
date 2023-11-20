@@ -24,6 +24,6 @@ Can include visual aids - eg: screenshot of running project, structure and desig
 Team Members:
 - Thura: 
 - Michelle: 
-- Carment: 
+- Carment: https://github.com/Carment14tham
 - Ming Yi: 
 - Ivan: 
