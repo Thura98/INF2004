@@ -4,7 +4,7 @@
 ByteBack : SD Card Recovery Tool
 
 # Project Description
-The project is a forensic recovery tool that utilizes Raspberry Pi Pico W and C language. The tool operates at a low-level, beyond the filesystem and analyzes the raw data within the SD Card. There are two phases to the tool: Data Carving (Recovery) and Data Storage.
+The project is a forensic recovery tool that utilizes Raspberry Pi Pico W and C language titled ByteBack. The tool operates at a low-level, beyond the filesystem and analyzes the raw data within the SD Card. There are two phases to the tool: Data Carving (Recovery) and Data Storage.
 
 It performs a recovery operation on every single byte of data on the SD Card which is useful for recovering corrupted data. The recovered data is then transferred via the UART communication link from one Pico device to a second Pico device, which handles the File Storage in a similar fashion to the File Recovery where it reads the recovered data byte by byte and stored on the second Pico device.
 
