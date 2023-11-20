@@ -21,8 +21,8 @@ Provide instructions and examples so users/contributors can use the project.
 Can include visual aids - eg: screenshot of running project, structure and design principle used
 
 # Credits
-Thura
-Michelle
-Carment
-Ming Yi
-Ivan
+- Thura
+- Michelle
+- Carment
+- Ming Yi
+- Ivan
