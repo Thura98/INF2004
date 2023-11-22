@@ -25,10 +25,10 @@ Team Members:
 - Thura: Data Recovery and Identification
     - Function: Develop code to perform recovery of deleted files from SD card.
     - Coding Requirements: Utilize Pico to perform file carving to recover deleted files from the SD card and identify the type of files recovered.
-- Michelle: Write Blocker
+- Michelle https://github.com/soobdoobers42: Write Blocker
     - Function: Preventing the data from being tempered after File Carving is performed on the SD Card.
     - Coding Requirements: Create functions to block writing from flash memory.
-- Carment: Read/Write Operations & https://github.com/Carment14tham
+- Carment https://github.com/Carment14tham: Read/Write Operations
     - Function: Develop code for accessing, retrieving and updating the data in the SD card.
     - Coding Requirements: Ensuring the data can be accessed, retrieved and updated. Create functions for users to be able to perform read and write after the Write Blocker is implemented.
 - Ming Yi: SD Card Access using SPI
