@@ -22,8 +22,28 @@ Can include visual aids - eg: screenshot of running project, structure and desig
 
 # Credits
 Team Members:
-- Thura: 
-- Michelle: 
+- Thura: Data Recovery and Identification
+    - Function: Develop code to perform recovery of deleted files from SD card.
+    - Coding Requirements: Utilize Pico to perform file carving to recover deleted files from the SD card and identify the type of files recovered.
+- Michelle: Write Blocker
 - Carment: https://github.com/Carment14tham
-- Ming Yi: 
-- Ivan: 
+- Ming Yi: SD Card Access using SPI
+    - Function: Develop code to read data from target SPI flash memory chips.
+    - Coding Requirements: Implement SPI communication protocols to interact with the SPI flash memory. Create functions for reading, writing, and deleting data from the flash memory.
+- Ivan: Data Transfer
+    - Function: Coordinate the integration of coding modules developed by other team members.
+    - Coding Requirements: Ensure that the different components of the tool, including data acquisition, storage, and GUI, work seamlessly together. Debug and resolve any compatibility issues.
+ 
+# Challenges
+- Limitations:
+1. There is limited memory space in the Raspberry Pico to store multiple data files of various filesystem.
+2. UART Connection has a high chance of data loss during data transfer.
+3. Limited to omly image file size.
+4. Multiple Library dependencies
+
+# Deliverables
+- A practical Embedded Forensic Tool built on the Raspberry Pi Pico.
+- Well-documented source code.
+- A detailed project report outlining the design, development process, technical challenges, and lessons learned.
+- A presentation showcasing the tool's capabilities, its role in digital forensics, and potential applications in security research and investigations.
+
