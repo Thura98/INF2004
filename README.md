@@ -35,7 +35,7 @@ Team Members:
     - Coding Requirements: Ensure that the different components of the tool, including data acquisition, storage, and GUI, work seamlessly together. Debug and resolve any compatibility issues.
  
 # Challenges
-- Limitations:
+## Limitations:
 1. There is limited memory space in the Raspberry Pico to store multiple data files of various filesystem.
 2. UART Connection has a high chance of data loss during data transfer.
 3. Limited to omly image file size.
