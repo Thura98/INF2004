@@ -31,7 +31,7 @@ Team Members:
 - Carment https://github.com/Carment14tham: Read/Write Operations
     - Function: Develop code for accessing, retrieving and updating the data in the SD card.
     - Coding Requirements: Ensuring the data can be accessed, retrieved and updated. Create functions for users to be able to perform read and write after the Write Blocker is implemented.
-- Ming Yi: SD Card Access using SPI
+- Ming Yi https://github.com/2201656: SD Card Access using SPI
     - Function: Develop code to read data from target SPI flash memory chips.
     - Coding Requirements: Implement SPI communication protocols to interact with the SPI flash memory. Create functions for reading, writing, and deleting data from the flash memory.
 - Ivan: Data Transfer
