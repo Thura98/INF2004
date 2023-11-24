@@ -10,11 +10,15 @@ It performs a recovery operation on every single byte of data on the SD Card whi
 
 # How to Install and Run the Project
 Hardware Required:
-- Laptop/PC
+- Laptop/PC with windows 10 and above
 - x2 Raspberry Pico W
 - x2 Maker Pi Pico
 - x1 Male Jumper Cables
 - 2x 32GB SD Card (Preferably SANDISK brand SD cards)
+
+Software required:
+- Development environment for the pico in C using the Pico SDK
+(https://github.com/raspberrypi/pico-setup-windows/releases/latest/download/pico-setup-windows-x64-standalone.exe)
 
 # How to Use the Project
 Provide instructions and examples so users/contributors can use the project.
