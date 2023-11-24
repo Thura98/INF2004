@@ -13,8 +13,8 @@ Hardware Required:
 - Laptop/PC
 - x2 Raspberry Pico W
 - x2 Maker Pi Pico
-- Male Jumper Cables
-- 2x 32GB SD Card
+- x1 Male Jumper Cables
+- 2x 32GB SD Card (Preferably SANDISK brand SD cards)
 
 # How to Use the Project
 Provide instructions and examples so users/contributors can use the project.
