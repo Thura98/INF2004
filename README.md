@@ -20,7 +20,7 @@ Hardware Required:
 Provide instructions and examples so users/contributors can use the project.
 Can include visual aids - eg: screenshot of running project, structure and design principle used
 
-
+![alt text](https://github.com/Carment14tham/INF2004/blob/main/img/Capture.PNG)
 1. Download and unzip the folder
 
 2. Go to your pico examples folder(PATHTO\Documents\Pico-v1.5.1\pico-examples) and add the INF2004_GRP26_PROJECT folder
