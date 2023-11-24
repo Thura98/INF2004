@@ -35,16 +35,16 @@ Can include visual aids - eg: screenshot of running project, structure and desig
 
 # Credits
 Team Members:
-- Thura: Data Recovery and Identification
+- Thura(https://github.com/Thura98): Data Recovery and Identification
     - Function: Develop code to perform recovery of deleted files from SD card.
     - Coding Requirements: Utilize Pico to perform file carving to recover deleted files from the SD card and identify the type of files recovered.
-- Michelle https://github.com/soobdoobers42: Write Blocker
+- Michelle(https://github.com/soobdoobers42): Write Blocker
     - Function: Preventing the data from being tempered after File Carving is performed on the SD Card.
     - Coding Requirements: Create functions to block writing from flash memory.
-- Carment https://github.com/Carment14tham: Read/Write Operations
+- Carment(https://github.com/Carment14tham): Read/Write Operations
     - Function: Develop code for accessing, retrieving and updating the data in the SD card.
     - Coding Requirements: Ensuring the data can be accessed, retrieved and updated. Create functions for users to be able to perform read and write after the Write Blocker is implemented.
-- Ming Yi https://github.com/2201656: SD Card Access using SPI
+- Ming Yi(https://github.com/2201656): SD Card Access using SPI
     - Function: Develop code to read data from target SPI flash memory chips.
     - Coding Requirements: Implement SPI communication protocols to interact with the SPI flash memory. Create functions for reading, writing, and deleting data from the flash memory.
 - Ivan: Data Transfer
