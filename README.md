@@ -20,6 +20,14 @@ Hardware Required:
 Provide instructions and examples so users/contributors can use the project.
 Can include visual aids - eg: screenshot of running project, structure and design principle used
 
+
+1. Download and unzip the folder
+
+2. Go to your pico examples folder(PATHTO\Documents\Pico-v1.5.1\pico-examples) and add the INF2004_GRP26_PROJECT folder
+
+3. Go to the overall CMakeLists.txt file and write "add_subdirectory(INF2004_GRP26_PROJECT)"  at the end of the file
+
+
 # Credits
 Team Members:
 - Thura: Data Recovery and Identification
