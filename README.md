@@ -36,7 +36,7 @@ Can include visual aids - eg: screenshot of running project, structure and desig
 
 ![alt text](https://github.com/Carment14tham/INF2004/blob/main/img/Capture3.jpg)
 
-4. To allow file carving to be performed on your SD card using disk read operations, build the **SD_FileCarve_Init** and run it on your raspberry pi pico w(Ensure your SD Card is a new one, the data on your SD Card will be lost!)
+4. To allow file carving to be performed on your SD card using disk read operations, build the **SD_FileCarve_Init** and run it on your raspberry pi pico w (Ensure your SD Card is a new one, the **data** on your **SD Card** will be **lost**!)
 
 ![alt text](https://github.com/Carment14tham/INF2004/blob/main/img/Capture4.PNG)
  
