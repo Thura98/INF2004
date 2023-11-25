@@ -25,6 +25,8 @@ int read_disk_sectors(
 {
     UINT m;
     UINT n;
+    UINT j;
+    UINT k;
     DWORD lba = 1;
     BYTE *pbuff = (BYTE *)buff;
     DSTATUS ds;
@@ -67,15 +69,39 @@ int read_disk_sectors(
 
     /* Single sector read test */
     printf("**** Read from disk sector ****\n");
-    lba = 16640;
+    lba = 16639;
     printf(" disk_read(%u, 0x%X, %lu, 4)", pdrv, (UINT)pbuff, lba);
     printf("\n");
     for(m = 0 ; m < (61/4) + 2 ; m ++){
         dr = disk_read(pdrv, pbuff, lba, 4);
         for (n = 0; n < 2048; n++)
         {
-            printf("%02x ", pbuff[n]);
-            uart_putc(UART_ID, pbuff[n]);
+            if(pbuff[n] == 0xe0 && pbuff[n-1] == 0xff && pbuff[n-2] == 0xd8 && pbuff[n-3] == 0xff){
+                uart_putc(UART_ID, pbuff[n - 3]);
+                uart_putc(UART_ID, pbuff[n - 2]);
+                uart_putc(UART_ID, pbuff[n - 1]);
+
+                printf("%02x ", pbuff[n-3]);
+                printf("%02x ", pbuff[n-2]);
+                printf("%02x ", pbuff[n-1]);
+
+                while(true)
+                {  
+                    uart_putc(UART_ID, pbuff[n]);
+                    printf("%02x ", pbuff[n]);
+                    if(pbuff[n-1] == 0xff && pbuff[n] == 0xd9){
+                        break;
+                    }
+                    n++;
+                    if(n == 2048){
+                        lba = lba + 4;
+                        disk_read(pdrv, pbuff, lba, 4);
+                        n = 0;
+                    }
+                }
+            }
+            // uart_putc(UART_ID, pbuff[n]);
+            // printf("%02x ", pbuff[n]);
             if(pbuff[n-1] == 0xff && pbuff[n] == 0xd9){
                 break;
             }
