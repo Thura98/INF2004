@@ -1,0 +1,3 @@
+add_subdirectory(Pico1_FileCarve)
+add_subdirectory(Pico2_FileStorage)
+add_subdirectory(SD_FileCarve_Init)
