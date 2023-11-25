@@ -33,6 +33,9 @@ Can include visual aids - eg: screenshot of running project, structure and desig
 3. Go to the overall CMakeLists.txt file and write "add_subdirectory(INF2004_GRP26_PROJECT)"  at the end of the file
 ![alt text](https://github.com/Carment14tham/INF2004/blob/main/img/Capture3.jpg)
 
+4. To allow file carving to be performed on your SD card using disk read operations, build the **SD_FileCarve_Init** and upload it to your raspberry pi pico w
+![alt text](https://github.com/Carment14tham/INF2004/blob/main/img/Capture4.PNG)
+ 
 # Credits
 Team Members:
 - Thura(https://github.com/Thura98): Data Recovery and Identification
