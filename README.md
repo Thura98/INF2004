@@ -28,11 +28,11 @@ Can include visual aids - eg: screenshot of running project, structure and desig
 
 ![alt text](https://github.com/Carment14tham/INF2004/blob/main/img/Capture2.PNG)
 
-3. Go to your pico examples folder(PATHTO\Documents\Pico-v1.5.1\pico-examples) and add the INF2004_GRP26_PROJECT folder
+2. Go to your pico examples folder(PATHTO\Documents\Pico-v1.5.1\pico-examples) and add the INF2004_GRP26_PROJECT folder
 
 ![alt text](https://github.com/Carment14tham/INF2004/blob/main/img/Capture.PNG)
 
-4. Go to the overall CMakeLists.txt file and write "add_subdirectory(INF2004_GRP26_PROJECT)"  at the end of the 
+3. Go to the overall CMakeLists.txt file and write "add_subdirectory(INF2004_GRP26_PROJECT)"  at the end of the 
 
 ![alt text](https://github.com/Carment14tham/INF2004/blob/main/img/Capture3.jpg)
 
