@@ -1,2 +1,0 @@
-add_subdirectory(Pico1_FileCarve)
-add_subdirectory(Pico2_FileStorage)
