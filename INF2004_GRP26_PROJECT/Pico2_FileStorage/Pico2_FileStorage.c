@@ -7,8 +7,8 @@
 #define UART_ID uart0
 #define BAUD_RATE 115200
 
-#define UART_TX_PIN 0
-#define UART_RX_PIN 1
+#define UART_TX_PIN 0   // PIN 0  for UART Transmission
+#define UART_RX_PIN 1   // PIN 1  for UART Receive
 
 int main() {
     FRESULT fr;
@@ -67,27 +67,25 @@ int main() {
     } 
 
     DWORD buff[FF_MAX_SS]; /* Working buffer (4 sector in size) */
-    BYTE *pbuff = (BYTE *)buff;
+    BYTE *pbuff = (BYTE *)buff; // buffer to store the carved file bytes
     UINT bw;
-    UINT m = 0;
     UINT n = 0;
     while (true) 
     {   
         if(uart_is_readable(UART_ID))
         {
+            // Carved bytes received from uart will be stored in pbuff buffer byte by byte
             pbuff[n] = uart_getc(UART_ID); 
             if(n == 2047)
             {
-                // for(m = 0 ; m < (n + 1) ; m ++){
-                //     printf("%02x ", pbuff[m]);
-                // }
+                // Carved bytes will be written to the SD card in batches of 2048 bytes
                 ret = f_write(&fil, pbuff, (n + 1), &bw);
             }
 
+            // Stops when the carved byes ff d9 are detected, ff d9 indicates the end of a jpg file
             if(pbuff[n - 1] == 0xff && pbuff[n] == 0xd9){
-                // for(m = 0 ; m < (n + 1); m ++){
-                //     printf("%02x ", pbuff[m]);
-                // }
+                // Performs a write operation of the remaining less than 
+                // 2048 carved bytes up to the ff d9 bytes to the SD card
                 ret = f_write(&fil, pbuff, (n + 1), &bw);
                 printf("\n%02x", pbuff[n-1]);
                 printf("\n%02x", pbuff[n]);
@@ -95,7 +93,6 @@ int main() {
             }
             n++;
             if(n == 2048){
-                // printf("\n%d\n", n);
                 n = 0;
             }         
         }
